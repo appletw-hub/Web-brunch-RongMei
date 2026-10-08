@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>榮和美早午餐｜台南中西區永福路・美味早晨從這裡開始</title>
+  <meta name="description" content="榮和美早午餐位於台南中西區永福路一段，提供漢堡、蛋餅、吐司、熟食與冷熱飲。週一至週六 06:00–12:30。電話 06-213-7263。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 上方：主視覺（含左上方 Logo 呼吸燈箱） -->
+  <header class="top" id="top">
+    <div class="hero retro-card">
+      <img src="images/hero.jpg" alt="榮和美早午餐 店內主視覺：美味早晨，從這裡開始！">
+      <div class="logo-box overlay">
+        <img src="images/logo.png" alt="榮和美早午餐 Logo" class="logo-img">
+      </div>
+      <h1 class="visually-hidden">榮和美早午餐</h1>
+    </div>
+  </header>
+
+  <main class="middle">
+  <!-- 中間上方：餐點 icon -->
+  <nav class="icons" id="icons" aria-label="餐點分類">
+    <button class="icon-btn" type="button" data-label="招牌三明治">
+      <img src="images/icon-sandwich.png" alt="三明治">
+      <span class="shadow"></span>
+    </button>
+    <button class="icon-btn" type="button" data-label="酥香蛋餅">
+      <img src="images/icon-eggcake.png" alt="蛋餅">
+      <span class="shadow"></span>
+    </button>
+    <button class="icon-btn" type="button" data-label="美式漢堡">
+      <img src="images/icon-burger.png" alt="漢堡">
+      <span class="shadow"></span>
+    </button>
+    <button class="icon-btn" type="button" data-label="港式熟食">
+      <img src="images/icon-hot.png" alt="熟食">
+      <span class="shadow"></span>
+    </button>
+  </nav>
+
+  <!-- 中間下方：菜單看板 -->
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <h2 id="menu-title">今日菜單</h2>
+    <button class="menu-board retro-card" type="button" id="menuOpen" aria-label="放大菜單">
+      <img src="images/menu.jpg" alt="榮和美早午餐菜單看板：漢堡、蛋餅、吐司、丹麥吐司、乳酪餅、厚片、蔥抓餅、饅頭、熟食、冷熱飲">
+      <span class="zoom-tip">點擊放大 🔍</span>
+    </button>
+    <p class="note">午餐 11 點起供應（至中午 12:30）｜所有品項：加蛋加 15 元，起司加 10 元</p>
+  </section>
+  </main>
+
+  <!-- 下方：聯絡方式 + 地圖 -->
+  <footer class="contact" id="contact">
+    <div class="info retro-card">
+      <h2>聯絡我們</h2>
+      <ul>
+        <li><span class="ico">📞</span><div><b>電話</b><a href="tel:062137263">06-213-7263</a></div></li>
+        <li><span class="ico">📍</span><div><b>地址</b><span>700 台灣臺南市中西區小西里永福路一段 54 號</span></div></li>
+        <li><span class="ico">🕕</span><div><b>營業時間</b><span>星期一～六 06:00–12:30</span><small>（若遇假日，營業時間可能不同）</small></div></li>
+      </ul>
+      <div class="btns">
+        <a class="btn-primary" href="https://maps.app.goo.gl/p7rZf9iPMbakpMz96" target="_blank" rel="noopener">開啟 Google 地圖</a>
+        <a class="btn-secondary" href="tel:062137263">撥打電話</a>
+      </div>
+    </div>
+
+    <a class="map retro-card" href="https://maps.app.goo.gl/p7rZf9iPMbakpMz96" target="_blank" rel="noopener" aria-label="在 Google 地圖開啟榮和美早午餐">
+      <img src="images/map.jpg" alt="榮和美早午餐周邊插畫地圖">
+      <div class="walkers" aria-hidden="true">
+        <!-- 水平道路 -->
+        <i class="walker h" style="--y:29%;--dur:16s;--delay:0s;--c:#B91C1C"></i>
+        <i class="walker h rev" style="--y:30.5%;--dur:20s;--delay:-6s;--c:#16A34A"></i>
+        <i class="walker h" style="--y:77%;--dur:18s;--delay:-3s;--c:#F59E0B"></i>
+        <i class="walker h rev" style="--y:78.5%;--dur:14s;--delay:-9s;--c:#6B5E59"></i>
+        <!-- 垂直道路（永福路） -->
+        <i class="walker v" style="--x:46%;--dur:15s;--delay:-2s;--c:#B91C1C"></i>
+        <i class="walker v rev" style="--x:48.5%;--dur:19s;--delay:-8s;--c:#16A34A"></i>
+        <i class="walker v" style="--x:86%;--dur:17s;--delay:-5s;--c:#F59E0B"></i>
+      </div>
+    </a>
+  </footer>
+
+  <p class="copyright">© 榮和美早午餐｜台南市中西區永福路一段 54 號</p>
+
+  <!-- 菜單放大 -->
+  <dialog id="menuDialog" aria-label="菜單放大檢視">
+    <button type="button" class="close" id="menuClose" aria-label="關閉">✕</button>
+    <img src="images/menu.jpg" alt="菜單看板大圖">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
