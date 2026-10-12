@@ -16,13 +16,14 @@
 
 <body>
 
-  <!-- 上方：主視覺（含左上方 Logo 呼吸燈箱） -->
+  <!-- 上方：主視覺影片 -->
   <header class="top" id="top">
     <div class="hero retro-card">
-      <img src="images/hero.jpg" alt="榮和美早午餐 店內主視覺：美味早晨，從這裡開始！">
-      <div class="logo-box overlay">
-        <img src="images/logo.png" alt="榮和美早午餐 Logo" class="logo-img">
-      </div>
+      <video class="hero-video" autoplay muted loop playsinline poster="images/hero.jpg">
+        <source src="images/品牌宣傳%20banner.mp4" type="video/mp4">
+        <source src="images/品牌宣傳 banner.mp4" type="video/mp4">
+        <img src="images/hero.jpg" alt="榮和美早午餐 店內主視覺：美味早晨，從這裡開始！">
+      </video>
       <h1 class="visually-hidden">榮和美早午餐</h1>
     </div>
   </header>
@@ -54,12 +55,11 @@
 
     <!-- 中間下方：菜單看板 -->
     <section class="menu" id="menu" aria-labelledby="menu-title">
-      <h2 id="menu-title">今日菜單</h2>
+      <h2 id="menu-title">菜單</h2>
       <button class="menu-board retro-card" type="button" id="menuOpen" aria-label="放大菜單">
         <img src="images/menu.jpg" alt="榮和美早午餐菜單看板：漢堡、蛋餅、吐司、丹麥吐司、乳酪餅、厚片、蔥抓餅、饅頭、熟食、冷熱飲">
         <span class="zoom-tip">點擊放大 🔍</span>
       </button>
-      <p class="note">午餐 11 點起供應（至中午 12:30）｜所有品項：加蛋加 15 元，起司加 10 元</p>
     </section>
   </main>
 
@@ -81,18 +81,9 @@
 
     <a class="map retro-card" href="https://maps.app.goo.gl/p7rZf9iPMbakpMz96" target="_blank" rel="noopener"
       aria-label="在 Google 地圖開啟榮和美早午餐">
-      <img src="images/map.jpg" alt="榮和美早午餐周邊插畫地圖">
-      <div class="walkers" aria-hidden="true">
-        <!-- 水平道路 -->
-        <i class="walker h" style="--y:29%;--dur:16s;--delay:0s;--c:#B91C1C"></i>
-        <i class="walker h rev" style="--y:30.5%;--dur:20s;--delay:-6s;--c:#16A34A"></i>
-        <i class="walker h" style="--y:77%;--dur:18s;--delay:-3s;--c:#F59E0B"></i>
-        <i class="walker h rev" style="--y:78.5%;--dur:14s;--delay:-9s;--c:#6B5E59"></i>
-        <!-- 垂直道路（永福路） -->
-        <i class="walker v" style="--x:46%;--dur:15s;--delay:-2s;--c:#B91C1C"></i>
-        <i class="walker v rev" style="--x:48.5%;--dur:19s;--delay:-8s;--c:#16A34A"></i>
-        <i class="walker v" style="--x:86%;--dur:17s;--delay:-5s;--c:#F59E0B"></i>
-      </div>
+      <video class="map-video" autoplay muted loop playsinline>
+        <source src="images/map.mp4" type="video/mp4">
+      </video>
     </a>
   </footer>
 
